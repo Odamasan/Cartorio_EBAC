@@ -112,8 +112,9 @@ int main()
 		printf("*Escolha a opção desejada do menu selecionando um número:\n\n");
 		printf("\t 1 - Registrar nomes. \n");
 		printf("\t 2 - Consultar nomes. \n");
-		printf("\t 3 - Deletar nomes. \n\n"); 
-		printf("Digite a opção desejada:"); //fim do menu
+		printf("\t 3 - Deletar nomes. \n"); 
+		printf("\t 4 - Sair do cartório. \n\n");
+		printf("Digite a opção desejada: "); //fim do menu
 			
 		
 		scanf("%d",&opcao); //guarda o valor digitado pelo usuário e armazena na variável indicada
@@ -135,8 +136,13 @@ int main()
 			deletar();
 			break;
 			
+			case 4:
+			printf("Obrigada por utilizar o sistema EBAC");
+			return 0;
+			break;
+			
 			default:
-			printf("ERROR! Escolha uma opção entre 1,2 e 3 \n");
+			printf("ERROR! Escolha uma opção entre 1,2, 3 ou 4 \n");
 			system("pause");
 			break;
 		} //fim do fluxo de decisões de acordo com o que o usuário escolher
